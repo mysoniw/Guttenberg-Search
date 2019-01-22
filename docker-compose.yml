@@ -24,7 +24,8 @@ services:
 
   elasticsearch: # Elasticsearch Instance
     container_name: gs-search
-    image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.5.4@sha256:5ca85697b6273f63196b44c32311c5a2d1135af9cfd919e5922e49c5045d04b8
+    #image: docker.elastic.co/elasticsearch/elasticsearch:6.1.1
     volumes: # Persist ES data in seperate "esdata" volume
       - esdata:/usr/share/elasticsearch/data
     environment:
